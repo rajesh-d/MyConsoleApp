@@ -11,7 +11,7 @@ namespace MyConsoleApp
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome To Git Hub");
-            Console.WriteLine("Tested");
+            Console.WriteLine("This is My First Check In");
         }
     }
 }
