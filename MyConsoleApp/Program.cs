@@ -6,12 +6,17 @@ using System.Threading.Tasks;
 
 namespace MyConsoleApp
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome To Git Hub");
-            Console.WriteLine("This is My First Check In");
+            Console.WriteLine(Display());
+
+        }
+
+        public static string Display()
+        {
+            return "Jenkin Test";
         }
     }
 }
