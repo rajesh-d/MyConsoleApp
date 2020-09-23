@@ -2,22 +2,28 @@ pipeline {
     agent any
 
     stages {
-        stage('DEV') {
+        stage('build') {
             steps {
-                echo 'Dev Build Completed'
+                echo 'build started..'
             }
         }
         
-        stage('QA') {
+        stage('test') {
             steps {
-                echo 'QA Build Completed'
+                echo 'testing started..'
             }
         }
         
-         stage('Prod') {
+         stage('deploy') {
             steps {
-                echo 'Prod Build Completed'
+                echo 'deployment started..'
             }
+        }
+    }
+    
+    post {
+        success {
+            echo 'build completed..'
         }
     }
 }
